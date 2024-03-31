@@ -1,13 +1,15 @@
 <!DOCTYPE html>
 <html>
 <head>
-
-<link rel="stylesheet" href="app.css"/>
 <link rel="stylesheet" href="formstyle.css"/>
+<link rel="stylesheet" href="app.css"/>
+<h1>The Athlete Mental Network </h1>
 </head>
 <body>
+   
+    
     <section> 
-    <h1> The Athlete Mental Network </h1>
+    
     <nav>
         <ul>
             <li><a href="home.html">Home</a></li>
@@ -20,16 +22,25 @@
         
         
        <div class ="form-container">
-        <form action = "" class = "contact-left">
+        <form action = "https://api.web3forms.com/submit" method="POST" class = "contact-left">
             <div class="contact-left-title">
                 <h2>Coaching Matching Survey</h2>
                 <p>Below are multiple choice questions, please answer to the best of your ability as to your individual athletic experience.</p>
                 <p>They will then be evaluated in order to get you in touch with your most compatible coach on our team.</p>
             </div>
+            <input type="hidden" name="access_key" value="ada527a7-7bfc-4d4e-a81f-bd7dfdef003c">
             <input type="text" name="name" placeholder="Please Enter Your Name (First and Last)" class="contact-inputs" required>
             <input type="email" name="email" placeholder="Please Enter Your Email" class="contact-inputs" required>
+            
+            
+            
+            
+            <button type="submit">Submit</button>
+            <
         </form>
-       </div>
+        </div>
+            
+       
         <p></p>
       </article>
 </section>

@@ -5,6 +5,7 @@ h1 {
     text-align: center;
     font-size: 64px;
     color: white;
+    margin: 0%;
 }
 
 body { 
@@ -13,10 +14,14 @@ body {
     background-color: white;
 }
 
+section{
+  display: -webkit-flex;
+  display: flex;
+}
 nav {
-    float: left;
-    width: 15%;
-    height: 300px; /* only for demonstration, should be removed */
+    -webkit-flex: 1;
+    -ms-flex: 1;
+    flex: 1;
     background: #ccc;
     padding: 20px;
   }
@@ -29,16 +34,20 @@ nav {
   }
 
   nav ul {
-    list-style-type: none;
+    list-style-type:none;
     padding: 0;
+    
+    
   }
 
   article {
-    float: left;
+    -webkit-flex: 7;
+    -ms-flex: 7;
+    flex: 7;
     padding: 20px;
-    width: 80%;
+    
     background-color: #f1f1f1;
-    height: 300px; /* only for demonstration, should be removed */
+   
   }
 
   section::after {
@@ -52,6 +61,13 @@ nav {
     width: 100%;
     background-color: #cb9a2d;
     color: #263242;
+    border-radius: 50px;
   }
 
+  @media (max-width: 600px) {
+    section {
+      -webkit-flex-direction: column;
+      flex-direction: column;
+    }
+  }
   
