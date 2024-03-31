@@ -1,0 +1,57 @@
+h1 {
+    font-family: Noto sans;
+    background-color: #263242;
+    padding: 30px;
+    text-align: center;
+    font-size: 64px;
+    color: white;
+}
+
+body { 
+    text-align: center;
+    font-family: Noto sans;
+    background-color: white;
+}
+
+nav {
+    float: left;
+    width: 15%;
+    height: 300px; /* only for demonstration, should be removed */
+    background: #ccc;
+    padding: 20px;
+  }
+
+  footer {
+    background-color: #777;
+    padding: 10px;
+    text-align: center;
+    color: white;
+  }
+
+  nav ul {
+    list-style-type: none;
+    padding: 0;
+  }
+
+  article {
+    float: left;
+    padding: 20px;
+    width: 80%;
+    background-color: #f1f1f1;
+    height: 300px; /* only for demonstration, should be removed */
+  }
+
+  section::after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  button{
+    font-size: 24px;
+    font-weight:bold;
+    width: 100%;
+    background-color: #cb9a2d;
+    color: #263242;
+  }
+
+  
